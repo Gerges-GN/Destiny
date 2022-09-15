@@ -1,0 +1,29 @@
+:root {
+  --red: #f05454;
+  --dark-blue: #222831;
+}
+body *{
+  color: #fff;
+}
+/* Header */
+header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/hero.jpg);
+}
+.nav-link {
+  color: #fff !important;
+  font-weight: 300;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.nav-link:hover {
+  color: var(--red) !important;
+}
+.nav-item {
+  margin: auto;
+}
