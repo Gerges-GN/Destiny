@@ -9,87 +9,254 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    
-    <link href="./assets/lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="./assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-    <link href="./assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-    
+    <link
+      rel="stylesheet"
+      href="./assets/lib/magnific-popup/magnific-popup.css"
+    />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
   </head>
   <body>
-    <header>
+    <header id="home">
       <!-- Navbar section -->
-      <nav
-        class="navbar navbar-expand-lg navbar-dark p-5 pt-4 fs-5 bg-transparent"
-      >
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg fixed-top pt-4 fs-5 bg-transparent">
+        <div class="container">
           <!-- <a class="navbar-brand" style="width: 50px;" href="#"><img style="width: 100%;" src="assets/images/logo-low-02.jpg" alt="GN logo"></a> -->
-          <a class="navbar-brand" style="width: 50px" href="#"
-            ><img
-              class="logo"
-              src="assets/images/logo.svg"
-              alt="GN logo"
-              style="background-color: #ffffff; padding: 5px"
-          /></a>
+          <a class="navbar-brand" href="#home">GN</a>
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
           >
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#features">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#reviews">Reviews</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#pricing">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title text-black" id="offcanvasNavbarLabel">
+                Destiny
+              </h5>
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body justify-content-end">
+              <ul class="navbar-nav py-3 mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#pricing">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
       <!-- End navbar section -->
       <!-- Hero section -->
-      <div class="container-fluid p-0 mt-5">
+      <section class="container d-flex h-100 align-items-center">
         <div class="row g-0 flex-column-reverse flex-lg-row">
-          <div class="col-lg-6 p-0 wow fadeIn" data-wow-delay="0.1s">
-            <div
-              class="header-bg h-100 d-flex flex-column justify-content-center p-5"
-            >
-              <h1 class="display-4 fw-bold mt-5 ">
+          <div class="col-lg-6 p-0">
+            <div class="d-flex flex-column justify-content-center">
+              <h1 class="display-3 fw-bold mt-5">
                 Meet Destiny, the visonary landing Page.
               </h1>
               <p>
                 Re-targeting your audience with competitive intelligence
                 embedded in Destiny. See it in action and then believe.
               </p>
+              <div>
+                <a class="popup-youtube mt-3 py-2 px-4 btn" href="https://www.youtube.com/watch?v=3pZNzF6LBII">WATCH INRTO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end hero section -->
+    </header>
+
+    <!-- Services section -->
+    <section id="services">
+      <div class="container text-center py-5 my-5">
+        <div class="col-md-8 offset-md-2">
+          <div class="services-content">
+            <h1>Destiny isn't A.I, its the result of human intelligence.</h1>
+            <p>
+              Ne homero petentium mel, eu pro putent persecuti. Id ius mutat
+              gubergren, eros harum hendrerit ex eos, in quo vocibus inimicus
+              gubergren.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="services row pt-5">
+            <div class="col-10 offset-md-0 offset-1 col-md-4 pt-5">
+              <div class="service-icon">
+                <img
+                  class="p-2 bg-secondary bg-opacity-10 border-2 border rounded-circle"
+                  src="./assets/images/icon1.png"
+                  alt=""
+                />
+              </div>
+              <div class="services-description">
+                <h1 class="fs-5 pt-3">Highly Responsive</h1>
+                <p class="fw-light pt-1">
+                  Id ius mutat gubergren, eros harum hendrerit ex eos, in quo
+                  vocibus inimicus gubergren. Experience, then believe.
+                </p>
+              </div>
+            </div>
+            <div class="col-10 offset-md-0 offset-1 col-md-4 pt-5">
+              <div class="service-icon">
+                <img
+                  class="p-2 bg-secondary bg-opacity-10 border-2 border rounded-circle"
+                  src="./assets/images/icon2.png"
+                  alt=""
+                />
+              </div>
+              <div class="services-description">
+                <h1 class="fs-5 pt-3">Built-in Security</h1>
+                <p class="fw-light pt-1">
+                  Id ius mutat gubergren, eros harum hendrerit ex eos, in quo
+                  vocibus inimicus gubergren. Experience, then believe.
+                </p>
+              </div>
+            </div>
+            <div class="col-10 offset-md-0 offset-1 col-md-4 pt-5">
+              <div class="service-icon">
+                <img
+                  class="p-2 bg-secondary bg-opacity-10 border-2 border rounded-circle"
+                  src="./assets/images/icon3.png"
+                  alt=""
+                />
+              </div>
+              <div class="services-description">
+                <h1 class="fs-5 pt-3">Safety Locked</h1>
+                <p class="fw-light pt-1">
+                  Id ius mutat gubergren, eros harum hendrerit ex eos, in quo
+                  vocibus inimicus gubergren. Experience, then believe.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- end hero section -->
-    </header>
+    </section>
+    <!-- End services section -->
+    <!-- Features section -->
+    <section id="features">
+      <div class="features-lg bg-secondary bg-opacity-10 pt-5">
+        <div class="container py-5">
+          <div class="row feature align-items-center justify-content-evenly">
+            <div
+              class="col-lg-6 mb-4 mb-lg-0 section-stack"
+              data-aos="fade-up"
+              data-aos-delay="0"
+            >
+              <img
+                src="./assets/images/feature_1.png"
+                alt="Image"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-lg-5 section-title mt-5">
+              <h2 class="font-weight-bold mb-4">
+                Designed for Startups & brands.
+              </h2>
+              <p class="mb-4">
+                Just get the code and sit tight, you will witness its power and
+                performance in lead generations. Is simple yet Powerful and
+                productive technology. Experience, then believe.
+              </p>
+              <ul class="p-0">
+                <li class="list-unstyled">
+                  <i class="fa-regular fa-square-check"></i> Write some feature
+                  here.
+                </li>
+                <li class="list-unstyled">
+                  <i class="fa-regular fa-square-check"></i> Repeat the same
+                  with another one.
+                </li>
+                <li class="list-unstyled">
+                  <i class="fa-regular fa-square-check"></i> Complete the list
+                  with the last.
+                </li>
+              </ul>
+              <p><a href="#!" class="btn py-2 px-4">WATCH INRTO</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="features-lg bg-secondary bg-opacity-10">
+        <div class="container py-5">
+          <div class="row feature align-items-center justify-content-evenly mb-5">
+            <div class="col-lg-5 section-title mt-md-5">
+              <h2 class="font-weight-bold mb-4">
+                Designed for Startups & brands.
+              </h2>
+              <p class="mb-4">
+                Just get the code and sit tight, you will witness its power and
+                performance in lead generations. Is simple yet Powerful and
+                productive technology. Experience, then believe.
+              </p>
+              <ul class="p-0">
+                <li class="list-unstyled">
+                  <i class="fa-regular fa-square-check"></i> Write some feature
+                  here.
+                </li>
+                <li class="list-unstyled">
+                  <i class="fa-regular fa-square-check"></i> Repeat the same
+                  with another one.
+                </li>
+                <li class="list-unstyled">
+                  <i class="fa-regular fa-square-check"></i> Complete the list
+                  with the last.
+                </li>
+              </ul>
+              <p><a href="#!" class="btn py-2 px-4">WATCH INRTO</a></p>
+            </div>
+            <div
+              class="col-lg-6 mb-4 mt-5 mt-lg-0 mb-lg-0 section-stack"
+              data-aos="fade-up"
+              data-aos-delay="0"
+            >
+              <img
+                src="./assets/images/feature_1.png"
+                alt="Image"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End features section -->
     <!-- script files -->
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <script src="./assets/lib/magnific-popup/jquery.magnific-popup.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
