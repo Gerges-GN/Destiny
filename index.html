@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destiny</title>
-    <link href="./assets/images/logo.svg" rel="icon" />
+    <link href="./assets/images/Destiny-logo.svg" rel="icon" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -13,15 +13,16 @@
       rel="stylesheet"
       href="./assets/lib/magnific-popup/magnific-popup.css"
     />
+    <link rel="stylesheet" href="./assets/lib/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/all.min.css" />
   </head>
   <body>
     <header id="home">
       <!-- Navbar section -->
       <nav class="navbar navbar-expand-lg fixed-top pt-4 fs-5 bg-transparent">
-        <div class="container">
-          <!-- <a class="navbar-brand" style="width: 50px;" href="#"><img style="width: 100%;" src="assets/images/logo-low-02.jpg" alt="GN logo"></a> -->
-          <a class="navbar-brand" href="#home">GN</a>
+        <div class="container py-2 py-md-1">
+          <!-- <a class="navbar-brand" style="width: 40px;" href="#"><img style="width: 100%;" src="assets/images/destiny-logo.svg" alt="GN logo"> Destiny</a> -->
+          <a class="navbar-brand lh-1" href="#home">Destiny</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -49,7 +50,7 @@
               ></button>
             </div>
             <div class="offcanvas-body justify-content-end">
-              <ul class="navbar-nav py-3 mb-2 mb-lg-0">
+              <ul class="navbar-nav text-center py-3 py-md-1 mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link" href="#home">Home</a>
                 </li>
@@ -87,7 +88,11 @@
                 embedded in Destiny. See it in action and then believe.
               </p>
               <div>
-                <a class="popup-youtube mt-3 py-2 px-4 btn" href="https://www.youtube.com/watch?v=3pZNzF6LBII">WATCH INRTO</a>
+                <a
+                  class="popup-youtube mt-3 py-2 px-4 btn"
+                  href="https://www.youtube.com/watch?v=3pZNzF6LBII"
+                  >WATCH INRTO</a
+                >
               </div>
             </div>
           </div>
@@ -95,7 +100,6 @@
       </section>
       <!-- end hero section -->
     </header>
-
     <!-- Services section -->
     <section id="services">
       <div class="container text-center py-5 my-5">
@@ -168,7 +172,7 @@
     <section id="features">
       <div class="features-lg bg-secondary bg-opacity-10 pt-5">
         <div class="container py-5">
-          <div class="row feature align-items-center justify-content-evenly">
+          <div class="row feature align-items-center justify-content-between">
             <div
               class="col-lg-6 mb-4 mb-lg-0 section-stack"
               data-aos="fade-up"
@@ -208,9 +212,11 @@
           </div>
         </div>
       </div>
-      <div class="features-lg bg-secondary bg-opacity-10">
+      <div class="features-lg bg-secondary bg-opacity-10 mb-5">
         <div class="container py-5">
-          <div class="row feature align-items-center justify-content-evenly mb-5">
+          <div
+            class="row feature align-items-center justify-content-between mb-5"
+          >
             <div class="col-lg-5 section-title mt-md-5">
               <h2 class="font-weight-bold mb-4">
                 Designed for Startups & brands.
@@ -251,12 +257,129 @@
         </div>
       </div>
     </section>
-
     <!-- End features section -->
+    <!-- Reviews section -->
+    <section id="reviews">
+      <div class="container py-5">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="testimonial-single d-flex flex-column align-items-center"
+              >
+                <img
+                  src="./assets/images/testimonial1.jpg"
+                  alt="Testimonial image"
+                />
+                <div class="testimonial-text row mt-4">
+                  <p class="fs-6 mb-2 fw-light col-lg-8 offset-lg-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                    eaque dolor unde minus libero neque molestiae commodi nisi
+                    est? Odit!
+                  </p>
+                  <div class="stars mb-4">
+                    <i class="fa-solid fs-6 fa-star text-warning"></i>
+                    <i class="fa-solid fs-6 fa-star text-warning"></i>
+                    <i class="fa-solid fs-6 fa-star text-warning"></i>
+                    <i class="fa-solid fs-6 fa-star text-warning"></i>
+                    <i
+                      class="fa-solid fs-6 fa-star-half-stroke text-warning"
+                    ></i>
+                  </div>
+                  <h3 class="fs-6 fw-normal">- Rita Valentine</h3>
+                  <h3 class="fs-6 fw-normal">Primal Inc</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="testimonial-single d-flex flex-column align-items-center"
+              >
+                <img
+                  src="./assets/images/testimonial2.jpg"
+                  alt="Testimonial image"
+                />
+                <div class="testimonial-text row mt-4">
+                  <p class="fs-6 mb-2 fw-light col-lg-8 offset-lg-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                    eaque dolor unde minus libero neque molestiae commodi nisi
+                    est? Odit!
+                  </p>
+                  <div class="stars mb-4">
+                    <i class="fa-solid fs-6 fa-star text-warning"></i>
+                    <i class="fa-solid fs-6 fa-star text-warning"></i>
+                    <i class="fa-solid fs-6 fa-star text-warning"></i>
+                    <i class="fa-solid fs-6 fa-star text-warning"></i>
+                    <i
+                      class="fa-solid fs-6 fa-star-half-stroke text-warning"
+                    ></i>
+                  </div>
+                  <h3 class="fs-6 fw-normal">- Robert Hammer</h3>
+                  <h3 class="fs-6 fw-normal">Chairman Hammer Corp</h3>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="testimonial-single d-flex flex-column align-items-center"
+              >
+                <img
+                  src="./assets/images/testimonial3.jpg"
+                  alt="Testimonial image"
+                />
+                <div class="testimonial-text row mt-4">
+                  <p class="fs-6 mb-2 fw-light col-lg-8 offset-lg-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                    eaque dolor unde minus libero neque molestiae commodi nisi
+                    est? Odit!
+                  </p>
+                  <div class="stars mb-4">
+                    <i class="fa-solid fs-6 fa-star text-warning"></i>
+                    <i class="fa-solid fs-6 fa-star text-warning"></i>
+                    <i class="fa-solid fs-6 fa-star text-warning"></i>
+                    <i class="fa-solid fs-6 fa-star text-warning"></i>
+                    <i class="fa-solid fs-6 fa-star text-warning"></i>
+                  </div>
+                  <h3 class="fs-6 fw-normal">- Alice</h3>
+                  <h3 class="fs-6 fw-normal">CEO Marga Holdings</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End reviews section -->
+    <!-- Features section 2 -->
+    <section id="features-2">
+      <div class="container py-5">
+        <div class="row py-5">
+          <div class="col-lg-6">
+            <h2 class="fs-1 mb-3">Customized dashboard for mobile access.</h2>
+            <h4 class="mb-5 fw-light">Makes your everyday better.</h4>
+            <p>
+              Just get the code and sit tight, you'll witness its power and
+              performance in lead conversion. Powerful and productive
+              technology.
+            </p>
+            <p>
+              Experience, then believe. Just get the code and sit tight, you'll
+              witness its power and performance in lead conversion.
+            </p>
+            <p>
+              Just get the code and sit tight, you'll witness its power and
+              performance in lead conversion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End features section 2 -->
     <!-- script files -->
-    <script src="./assets/js/all.min.js"></script>
     <script src="./assets/js/jquery-3.6.1.min.js"></script>
+    <script src="./assets/js/all.min.js"></script>
     <script src="./assets/lib/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="./assets/lib/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
